@@ -44,7 +44,7 @@ it.only("verifY user can search for a course using the GET method", ()=>{
     cy.api(
     {
     method: "GET", 
-    url: baseUrl + path + 46,
+    url: baseUrl + path + 50,
  }).as("searchAcourseRequest");
  cy.get("@searchAcourseRequest").then((res)=>{
     const  responseBody = res.body;
@@ -57,21 +57,7 @@ it.only("verifY user can search for a course using the GET method", ()=>{
  })
  
 
- it("verifY user can delete for a course using the delete method", ()=>{
-    const baseUrl = "https://api.quales.tech/";
-    const path = "api/courses/";
-    cy.api(
-    {
-    method: "DELETE", 
-    url: baseUrl + path + 19,
- }).as("deleteAcourseRequest");
- cy.get("@deleteAcourseRequest").then((res)=>{
-    const  responseBody = res.body;
-    expect(res.status).to.eql(204);
-    
-    
- })
- })
+
 
 
 

@@ -11,7 +11,7 @@ context('Assertions', () => {
       cy.get('.assertion-table')
         .find('tbody tr:last')
         .should('have.class', 'success')
-        .find('td')
+        //.find('td')
         .first()
         // checking the text of the <td> element in various ways
         .should('have.text', 'Column content')

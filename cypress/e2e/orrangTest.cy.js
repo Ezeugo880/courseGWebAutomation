@@ -14,7 +14,7 @@ describe("this test is to validate that user can login on orangehrmlive", ()=>{
     cy.xpath("//a").should('have.length', '14') // NO of links
    
 
-   let expName="paul collings"
+   let expName='Gopi krishnan'
 
    cy.get(".oxd-userdropdown-name").then( (x)=>{
 

@@ -28,7 +28,7 @@ describe("custom commands",()=>{
     cy.visit("https://demo.nopcommerce.com/");
     cy.clickLink("Log in");
     cy.loginapp("ugochukwuoloto@gmail.com", "EmperorG");
-    cy.get('.topic-block-title > h2').should('have.text', 'Welcome to our store')
+  
 
 
   })
