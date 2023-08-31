@@ -3,15 +3,25 @@
   "version": "1.0.0",
   "description": "cypressnewframework",
   "main": "index.js",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinition": true
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ayo",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^11.0.1"
+    "@4tw/cypress-drag-drop": "^2.2.4",
+    "cypress": "^11.0.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "cypress-xpath": "^2.0.1"
   },
   "dependencies": {
+    "ajv": "^8.12.0",
     "cypress-plugin-api": "^2.11.1"
   }
 }
