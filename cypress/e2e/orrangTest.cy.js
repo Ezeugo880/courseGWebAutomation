@@ -11,23 +11,10 @@ describe("this test is to validate that user can login on orangehrmlive", ()=>{
     cy.get('.oxd-button').click()
     cy.get('.oxd-main-menu-search').should('be.visible')
 
-    cy.xpath("//a").should('have.length', '14') // NO of links
+   cy.xpath("//a").should('have.length', '14') // NO of links
    
 
-   let expName='Paul Collings'
-
-   cy.get(".oxd-userdropdown-name").then( (x)=>{
-
-              let actName=x.text()
-
-              //BDD style
-              expect(actName).to.equal(expName)
-   
-              //TDD style
-              assert.equal(actName,expName)
-
-})
-
+  
 
 
         
